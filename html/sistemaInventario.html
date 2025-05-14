@@ -1,0 +1,87 @@
+<!-- Sistema de Inventario de Productos
+Trabajás en una tienda de electrónica y necesitás implementar un sistema de
+inventario en línea. La tienda solo vende productos en ciertas categorías y con
+un rango de precios determinado. Tu tarea es crear una aplicación web que permita
+registrar productos y mostrarlos en una tabla.
+• Agregar una tabla con los encabezados: Nombre, Categoría, Precio y Stock.
+• Solo deben aparecer los encabezados inicialmente, sin productos cargados.
+• La tabla debe estar centrada en la página.
+• Crear un formulario debajo de la tabla con los siguientes campos:
+• Nombre del producto (campo de texto).
+• Categoría (select con opciones: Computadoras, Accesorios, Televisores).
+• Precio (campo numérico que permita solo valores mayores que 0).
+• Stock (campo numérico que debe ser mayor a 0).
+• Agregar un botón "Agregar producto".
+
+Al presionar “Agregar producto”
+El sistema debe agregar una fila en la tabla con la información ingresada.
+Limpia los campos del formulario después de agregar un producto. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="..//styles/sistemaInventario.css">
+   
+
+
+
+</head>
+<body>
+     <div class="containerTable">
+        <table id="tabla">
+ 
+            <tr id="titulos">
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>
+
+         
+            
+        </table>
+        
+    </div>
+   
+    <form action="" id="formulario">
+        <div>
+            <label for="nombreProducto">Nombre producto</label>
+            <input type="text" id="nombreProducto" >
+        </div>
+        <div>
+               <label for="selectCategoria">Categoria</label>
+                <select name="categoria" id="selectCategoria" >
+                    <option value="" selected disabled>Seleccione una categoría</option>
+                    <option value="computadoras">Computadoras</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="televisores">Televisores</option>
+                </select>
+        </div>
+        <div>
+            <label for="precio">Precio</label>
+            <input type="number" id="precio">
+
+        </div>
+    
+ 
+        <div>
+            <label for="stock">Stock</label>
+            <input type="number" id="stock">
+        </div>
+    
+
+    </form>
+   
+    
+   
+    <div id="divButton">
+        <button id="btnAgregarProducto">Agregar producto</button>
+    </div>
+    
+    <p id="mensaje"></p>
+    <script src="../js/sistemaInventario.js"></script>
+
+</body>
+</html>

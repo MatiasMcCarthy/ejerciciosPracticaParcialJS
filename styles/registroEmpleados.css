@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Whisper&display=swap');
+
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+
+h1{
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 50, 91, 1);
+
+}
+
+#formulario{
+    border: 0.5rem solid black;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../img/LOGO.svg);
+    background-repeat: no-repeat;
+    background-size:contain; */
+   
+
+}
+
+
+.divLabelInput label{
+
+   padding-right: 2rem;
+   font-size: 1.2rem;
+   color: aliceblue;
+}
+
+.divLabelInput{
+   
+    height: 1.5rem;
+    width: 350px;
+    margin: 10px;
+    display: flex;
+    justify-content:flex-start;
+   
+    
+    
+}
+
+button{
+    width: 10rem;
+    border-radius: 10px;
+    background-color: rgba(0, 50, 120, 1);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+button:hover{
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 3rem;
+}
+

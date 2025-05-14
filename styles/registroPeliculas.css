@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Whisper&display=swap');
+
+*{
+    margin: 0;
+    font-family: Roboto;
+    color:white
+}
+body{
+    background-color: rgba(0, 50, 81, 1);
+
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}
+
+#divTabla{
+ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem ;
+    
+    
+}
+#divTabla #tabla{
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 40rem;
+   
+}
+
+#divTabla #tabla th{
+    border: 1px black solid;
+    
+}
+#divTabla #tabla tr{
+    border: 1px black solid;
+    text-align: center;
+    
+}
+
+#divTabla #tabla td{
+    border: 1px black solid;
+     
+}
+#divTitulo{
+display: flex;
+justify-content: center;
+}
+
+#divFormulario{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+
+
+}
+#formulario{
+ 
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.divlabelInput{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 1.5;
+    border: 0.2rem black solid;
+    
+}
+.divlabelInput select {
+    color: black;
+}
+
+.divlabelInput select option{
+    color: black;
+}
+
+
+
+.divlabelInput label {
+  width: 40%; /* fija el ancho del label */
+  text-align: left;
+  font-weight: 600;
+}
+.divlabelInput input,
+.divlabelInput select {
+  width: 60%; /* ocupa el resto */
+  color: black;
+}
+
+#divBtn{
+display: flex;
+justify-content: center;
+
+}
+
+#divBtn #agregarPelicula{
+    border-radius: 10rem;
+    padding: 1rem;
+    background-color: rgb(89, 160, 204);
+    font-size: 1rem;
+}
+#divBtn #agregarPelicula:hover{
+    border-radius: 10rem;
+    padding: 1rem;
+    background-color:rgb(2, 74, 119);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+#mensaje{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+}

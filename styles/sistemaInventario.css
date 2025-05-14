@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Whisper&display=swap');
+
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+   
+ 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 50, 81, 1);
+
+}
+
+.containerTable{
+
+height: auto;
+width: 100vw;
+display: flex;
+justify-content: center;
+
+}
+
+#tabla{
+    border-collapse: collapse;
+}
+
+#formulario{
+
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+#divButton{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#btnAgregarProducto{
+ border-radius: 10px;
+ background-color: white;
+ color: black;
+ height: 2rem;
+ margin-top: 2rem;
+ 
+}
+
+#btnAgregarProducto:hover{
+   
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+
+
+th,td{
+    border: 1px #666 solid;
+    color: wheat;
+}
+th{
+    background-color: brown;
+    color: white;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mensaje{
+    text-align: center;
+    font-weight: 600;
+}
+#formulario input:hover{
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.7);
+}

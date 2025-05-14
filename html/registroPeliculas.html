@@ -1,0 +1,98 @@
+
+<!-- Estás trabajando para un cine que tiene que registrar sus películas para mostrar
+en la cartelera. El objetivo es crear un sistema que permita agregar las películas
+disponibles. Para esto, debés:
+
+• Crear una página web con el título principal "Cartelera de Cine".
+• Debajo del título, agregar una tabla que contenga los encabezados: Título,
+Género, Año y Clasificación.
+• Solo deben aparecer los encabezados, no los datos de las películas. La
+tabla debe contener los bordes externos e internos, que se vean como una
+línea unificada. El encabezado además, debe tener una fuente distinta al
+resto de la tabla.
+• Crear un formulario debajo de la tabla con los campos:
+• Título (campo de texto).
+• Género (select con opciones: Acción, Drama, Comedia).
+• Año (campo numérico que debe permitir años desde 1900 en adelante).
+• Clasificación (select con opciones: ATP, +13, +16, +18).
+• Agregar un botón "Agregar película" debajo del formulario.
+Si el formulario está incompleto o el año no es válido, muestra un mensaje de
+advertencia en rojo.
+Si los datos son válidos, agrega una nueva fila a la tabla con los datos
+ingresados, y muestra la película agregada en la tabla.
+Al posicionar el mouse por encima, cambiar el color de fondo de las celdas de
+Clasificación según la clasificación de la película. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera</title>
+    <link rel="stylesheet" href="..//styles/registroPeliculas.css">
+
+
+</head>
+<body>
+     <div id="divTitulo">
+        <h1 id="titulo">CARTELERA CINE</h1>
+     </div>
+
+     
+     <div id="divTabla">
+        <table id="tabla" >
+            <tr>
+                <th>TITULO</th>
+                <th>AÑO</th>
+                <th>GENERO</th>
+                <th>CLASIFICACION</th>
+            </tr>
+        </table>
+
+     </div>
+
+     <div id="divFormulario">
+        <form action="" id="formulario">
+        <div class="divlabelInput">
+            <label for="tituloPelicula">Titulo</label>
+            <input type="text" id="tituloPelicula">
+        </div>
+        <div class="divlabelInput">
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero">
+                <option value="" selected disabled>Seleccione Genero</option>
+                <option value="Accion">Accion</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Terror">Terror</option>
+            </select>
+        </div>
+        <div class="divlabelInput">
+            <label for="año">Año</label>
+            <input type="number" id="año">
+        </div>
+
+        <div class="divlabelInput">
+             <label for="clasificacion">Clasificacion</label>
+            <select name="clasificacion" id="clasificacion">
+                <option value="" selected disabled>Seleccione Clasificacion</option>
+                <option value="ATP">ATP</option>
+                <option value="+13">+13</option>
+                <option value="+16">+16</option>
+                <option value="+18">+18</option>
+            </select>
+        </div>
+
+     </form>
+     </div>
+     
+     <div id="divBtn">
+        <button id="agregarPelicula">Agregar pelicula</button>
+     </div>
+     
+     <p id="mensaje"></p>
+     <script src="../js/registroPeliculas.js"></script>
+
+    
+</body>
+</html>

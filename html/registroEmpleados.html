@@ -1,0 +1,51 @@
+<!-- Crear una página web con el título "Registro de Empleados".
+• Crear un formulario con los siguientes campos:
+• Nombre completo (campo de texto).
+• Cargo (campo de texto).
+• Edad (campo numérico, debe ser mayor o igual a 18).
+• Departamento (select con opciones: Ventas, Marketing, IT, Finanzas).
+• Agregar un botón "Agregar empleado". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empleados</title>
+    <link rel="stylesheet" href="../styles/registroEmpleados.css">
+</head>
+<body>
+    <h1>Registro Empleados</h1>
+     
+    <form  id="formulario">
+
+        
+        <div class="divLabelInput">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="divLabelInput">
+             <label for="cargo">Cargo</label>
+             <input type="text" id="cargo" name="cargo">
+        </div>
+       <div class="divLabelInput">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+       </div>
+        <div class="divLabelInput">
+            <label for="selectDepartamento">Departamento</label>
+        <select name="departamento" id="selectDepartamento">
+            <option value="ventas">Ventas</option>
+            <option value="marketing">Marketing</option>
+            <option value="it">IT</option>
+            <option value="finanzas">Finanzas</option>
+        </select>
+        </div>
+        
+    </form>
+    <button id="AgregarEmpleado" >Agregar Empleado</button>
+        <div id="mensaje" class="error"></div>
+    
+<script src="../js/registroEmpleado.js"></script>
+</body>
+
+</html>
